@@ -1,1 +1,10 @@
+<input [(ngModel)]="imageUrl" />
 <p>app works2! {{ name2() | uppercase }}</p>
+<p>app works2! {{ name2().toUpperCase() }}</p>
+<p>{{ name | uppercase }}</p>
+
+<img [src]="imageUrl" alt="" />
+
+<br />
+
+<!--<button (click)="changeImage($event)">Change Image</button>-->
