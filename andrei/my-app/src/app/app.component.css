@@ -1,7 +1,12 @@
 p {
-  color: green;
+  color: blue;
 }
 
 img {
   width: 200px;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
 }

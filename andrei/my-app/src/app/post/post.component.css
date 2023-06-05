@@ -1,0 +1,12 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+p {
+  color: red;
+}
+
+:host {
+  font-size: 26px;
+}

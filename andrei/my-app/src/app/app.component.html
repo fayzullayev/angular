@@ -1,10 +1,44 @@
-<input [(ngModel)]="imageUrl" />
-<p>app works2! {{ name2() | uppercase }}</p>
-<p>app works2! {{ name2().toUpperCase() }}</p>
-<p>{{ name | uppercase }}</p>
+<p *ngIf="blueClass">qwdw</p>
+
+<button
+  (click)="blueClass = !blueClass"
+  [ngClass]="{ blue: blueClass }"
+  [ngStyle]="{ 'font-size.px': fontSize }"
+>
+  Change
+</button>
+
+<hr />
+
+<input [(ngModel)]="imageUrl" /> <br />
+<br />
+<hr />
+
+<app-post
+  *ngFor="let image of images; let i = index"
+  [img]="image"
+  (onImgSelected)="logImg($event)"
+>
+  <p>some caption {{ i + 1 }}</p>
+</app-post>
+
+<h3>
+  <pre>{{ pizza | json }}</pre>
+</h3>
+
+<h3>{{ name | titlecase }}</h3>
+<h3>{{ name | uppercase }}</h3>
+<h3>{{ name | lowercase }}</h3>
+
+<hr />
+{{ currentDate | date : "yyyy MM dd" }}
+<hr />
+{{ 4 | currency : " UZS" }}
+
+<hr />
+
+<hr />
+{{ temp | number : "1.2-5" }}
+<hr />
 
 <img [src]="imageUrl" alt="" />
-
-<br />
-
-<!--<button (click)="changeImage($event)">Change Image</button>-->

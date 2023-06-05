@@ -6,29 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  private _name: string = 'Dwayne John';
-
   imageUrl: string =
     'https://images.unsplash.com/photo-1526900913101-88c16676ca02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=848&q=80';
 
-  imageUrl2: string =
-    'https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=911&q=80';
-
-  get name(): string {
-    return this._name;
+  logImg(event: string) {
+    console.log(event);
   }
 
-  name2(): string {
-    return this._name;
-  }
+  name: string = 'mirodil fayzullayev';
 
-  // changeImage(): void {
-  //   let img: string = this.imageUrl;
-  //   this.imageUrl = this.imageUrl2;
-  //   this.imageUrl2 = img;
-  // }
+  currentDate: Date = new Date();
 
-  changeImage(event: KeyboardEvent) {
-    this.imageUrl = (event.target as HTMLInputElement).value;
-  }
+  temp: number = 25.3;
+
+  pizza = {
+    pizzas: ['peperonni', 'bacon'],
+    size: 'large',
+  };
+
+  blueClass: boolean = false;
+
+  fontSize: number = 16;
+
+  public images: string[] = [
+    'https://fastly.picsum.photos/id/22/4434/3729.jpg?hmac=fjZdkSMZJNFgsoDh8Qo5zdA_nSGUAWvKLyyqmEt2xs0',
+    'https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g',
+    'https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I',
+  ];
 }
