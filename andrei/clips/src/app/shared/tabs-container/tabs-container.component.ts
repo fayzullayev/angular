@@ -34,5 +34,7 @@ export class TabsContainerComponent implements OnInit, AfterContentInit {
     });
 
     tab.active = true;
+
+    return false;
   }
 }
