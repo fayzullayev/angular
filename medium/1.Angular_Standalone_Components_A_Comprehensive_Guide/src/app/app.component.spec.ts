@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'tutorial-input' title`, () => {
+  it(`should have the '1.Angular_Standalone_Components_A_Comprehensive_Guide' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tutorial-input');
+    expect(app.title).toEqual('1.Angular_Standalone_Components_A_Comprehensive_Guide');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, tutorial-input');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, 1.Angular_Standalone_Components_A_Comprehensive_Guide');
   });
 });
