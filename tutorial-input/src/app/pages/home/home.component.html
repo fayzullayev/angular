@@ -1,0 +1,17 @@
+<div>
+  <h2>Home page - 2</h2>
+
+  <button (click)="toggle()">Toggle</button>
+
+  <div *ngIf="isShowTemplate; else blabla">
+    <div style="display: flex; gap: 16px">
+      <app-box color="red"></app-box>
+      <app-box-item></app-box-item>
+      <!--    <app-box color="blue"></app-box>-->
+      <!--        <app-box color="green"></app-box>-->
+      <!--    <app-box></app-box>-->
+    </div>
+  </div>
+
+  <ng-template #blabla><h1>Hello</h1> </ng-template>
+</div>

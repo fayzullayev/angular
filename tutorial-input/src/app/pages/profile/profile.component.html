@@ -1,0 +1,21 @@
+<h2>Profile page</h2>
+
+<nav [ngStyle]="{ backgroundColor: 'green' }">
+  <ul>
+    <li>
+      <a routerLink="about" routerLinkActive="active">About</a>
+    </li>
+    <li>
+      <a routerLink="courses" routerLinkActive="active">Courses</a>
+    </li>
+    <li>
+      <a routerLink="map" routerLinkActive="active">Map</a>
+    </li>
+    <li>
+      <a routerLink="/admin" routerLinkActive="active">Admin</a>
+    </li>
+  </ul>
+</nav>
+<hr />
+<router-outlet></router-outlet>
+<hr />
