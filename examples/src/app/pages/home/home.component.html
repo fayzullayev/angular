@@ -1,0 +1,17 @@
+<div>
+  <h2>Home page - 25456456465wefwefwefwefwef4</h2>
+
+  <button (click)="toggle()">Toggle</button>
+
+  @if (isShowTemplate) {
+    <div style="display: flex; gap: 16px">
+      <app-box color="red"></app-box>
+      <app-box-item></app-box-item>
+      <app-box color="blue"></app-box>
+      <app-box color="green"></app-box>
+      <app-box color="red"></app-box>
+    </div>
+  } @else {
+    <h1>Hello</h1>
+  }
+</div>
