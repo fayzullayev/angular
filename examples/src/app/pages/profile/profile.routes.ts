@@ -9,7 +9,7 @@ export const profile_routes: Routes = [
       import('./index/index.component').then((c) => c.IndexComponent),
   },
   {
-    path: ':idd',
+    path: ':id',
     loadComponent: () =>
       import('./own/own.component').then((c) => c.OwnComponent),
   },

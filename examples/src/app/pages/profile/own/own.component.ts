@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './own.component.css',
 })
 export class OwnComponent implements OnInit {
-  @Input({ alias: 'idd' }) iddd!: string;
+  @Input({ alias: 'id' }) iddd!: string;
 
   ngOnInit() {
     console.log('this.iddd:', this.iddd);
