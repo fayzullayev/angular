@@ -1,1 +1,11 @@
-<h2>Admin page!!!!!</h2>
+<div>
+  <h2>Admin page!!!!!</h2>
+  <hr />
+  <div>
+    <ul>
+      @for (comment of comments; track comment.id) {
+        <li>{{ comment.name }}</li>
+      }
+    </ul>
+  </div>
+</div>
