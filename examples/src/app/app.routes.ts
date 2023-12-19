@@ -13,14 +13,17 @@ export const routes: Routes = [
   {
     path: 'profile',
     loadComponent: () =>
-      import('./pages/profile/profile.component').then((c) => c.ProfileComponent),
+      import('./pages/profile/profile.component').then(
+        (c) => c.ProfileComponent,
+      ),
     children: [...profile_routes],
     canActivate: [authGuard],
   },
   {
     path: 'home',
     pathMatch: 'full',
-    loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent),
+    loadComponent: () =>
+      import('./pages/home/home.component').then((c) => c.HomeComponent),
   },
   {
     path: 'admin',

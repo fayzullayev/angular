@@ -1,7 +1,12 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { AboutComponent } from './about/about.component';
 import { MapComponent } from './map/map.component';
-import { provideRouter, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {
+  provideRouter,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from '@angular/router';
 import { NgStyle } from '@angular/common';
 import { profile_routes } from './profile.routes';
 
